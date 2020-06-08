@@ -1,0 +1,3555 @@
+{
+  "groups": [
+    {
+      "name": "Frame rate",
+      "description": "Frame rate",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "f-act",
+          "type": "float",
+          "unit": "/sec",
+          "description": "The actual frame rate being displayed by X-Plane. Unless your computer is bogged down, this will be the same as f-sim."
+        },
+        {
+          "name": "f-sim",
+          "type": "float",
+          "unit": "/sec",
+          "description": "The frame rate the simulator is “pretending” to have in order to keep the flight model from failing."
+        },
+        {
+          "name": "frame",
+          "type": "float",
+          "unit": "time",
+          "description": "The time required to render one frame, in seconds."
+        },
+        {
+          "name": "cpu",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        },
+        {
+          "name": "gpu",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        },
+        {
+          "name": "grnd",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        },
+        {
+          "name": "flit",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Times",
+      "description": "Times",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "real",
+          "type": "float",
+          "unit": "time",
+          "description": "The number of seconds, in the real world, elapsed since the simulator was launched."
+        },
+        {
+          "name": "totl",
+          "type": "float",
+          "unit": "time",
+          "description": "The number of seconds elapsed since the simulator was launched minus time spent in a loading screen."
+        },
+        {
+          "name": "missn",
+          "type": "float",
+          "unit": "time",
+          "description": "The time since the start of the “mission” (generally the time since the last time an aircraft or location was loaded)."
+        },
+        {
+          "name": "timer",
+          "type": "float",
+          "unit": "time",
+          "description": "The time elapsed on a timer for general use."
+        },
+        {
+          "name": "zulu",
+          "type": "float",
+          "unit": "time",
+          "description": "“Zulu” time (Greenwich Mean Time, or GMT) in the simulator, in decimal hours (e.g., 3.5 for 3:30 a.m.)."
+        },
+        {
+          "name": "local",
+          "type": "float",
+          "unit": "time",
+          "description": "Local time in the simulator, in decimal hours."
+        },
+        {
+          "name": "hobbs",
+          "type": "float",
+          "unit": "time",
+          "description": "The aircraft’s Hobbs time (a measurement of how long the aircraft’s systems have been run)."
+        }
+      ]
+    },
+    {
+      "name": "Simulator statistics (sim stats)",
+      "description": "Simulator statistics (sim stats)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "explo",
+          "type": "float",
+          "unit": "DIM",
+          "description": "undefined"
+        },
+        {
+          "name": "explo",
+          "type": "float",
+          "unit": "USE",
+          "description": "undefined"
+        },
+        {
+          "name": "cratr",
+          "type": "float",
+          "unit": "DIM",
+          "description": "undefined"
+        },
+        {
+          "name": "cratr",
+          "type": "float",
+          "unit": "USE",
+          "description": "undefined"
+        },
+        {
+          "name": "puffs",
+          "type": "float",
+          "unit": "TOT",
+          "description": "undefined"
+        },
+        {
+          "name": "puffs",
+          "type": "float",
+          "unit": "VIS",
+          "description": "undefined"
+        },
+        {
+          "name": "tris",
+          "type": "float",
+          "unit": "vis",
+          "description": "undefined"
+        },
+        {
+          "name": "q",
+          "type": "float",
+          "unit": "depth",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Speeds",
+      "description": "Speeds",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "Vind",
+          "type": "float",
+          "unit": "kias",
+          "description": "The craft’s indicated airspeed, in knots indicated airspeed."
+        },
+        {
+          "name": "Vind",
+          "type": "float",
+          "unit": "keas",
+          "description": "The craft’s indicated airspeed, in knots equivalent airspeed (the calibrated airspeed corrected for adiabatic compressible flow at the craft’s current altitude)."
+        },
+        {
+          "name": "Vtrue",
+          "type": "float",
+          "unit": "ktas",
+          "description": "The craft’s true airspeed (the speed of the craft relative to undisturbed air), in knots true airspeed."
+        },
+        {
+          "name": "Vtrue",
+          "type": "float",
+          "unit": "ktgs",
+          "description": "True airspeed, in knots true ground speed."
+        },
+        {
+          "name": "Vind",
+          "type": "float",
+          "unit": "mph",
+          "description": "The craft’s indicated airspeed, in miles per hour."
+        },
+        {
+          "name": "Vtrue",
+          "type": "float",
+          "unit": "mphas",
+          "description": "The craft’s true airspeed, in miles per hour airspeed."
+        },
+        {
+          "name": "Vtrue",
+          "type": "float",
+          "unit": "mphgs",
+          "description": "The craft’s true airspeed, in miles per hour ground speed."
+        },
+        {
+          "name": "Aircraft Mach speeds",
+          "type": "float",
+          "unit": "vertical velocity, and g-loads (mach, VVI, G-load)",
+          "description": ""
+        },
+        {
+          "name": "Mach",
+          "type": "float",
+          "unit": "ratio",
+          "description": "The aircraft’s current speed, as a ratio to Mach 1."
+        },
+        {
+          "name": "VVI",
+          "type": "float",
+          "unit": "fpm",
+          "description": "The aircraft’s current vertical velocity, in feet per minute. If everything is working as it should, this is normal to the local horizon under the aircraft."
+        },
+        {
+          "name": "Gload",
+          "type": "float",
+          "unit": "norml",
+          "description": "The g-load across the aircraft, relative to the aircraft body-axis, if all is working as it should."
+        },
+        {
+          "name": "Gload",
+          "type": "float",
+          "unit": "axial",
+          "description": "The axial g-load on the aircraft."
+        },
+        {
+          "name": "Gload",
+          "type": "float",
+          "unit": "side",
+          "description": "The side g-load on the aircraft."
+        }
+      ]
+    },
+    {
+      "name": "Atmosphere: weather",
+      "description": "Atmosphere: weather",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "SLprs",
+          "type": "float",
+          "unit": "inHG",
+          "description": "SLprs, in inches mercury."
+        },
+        {
+          "name": "SLtmp",
+          "type": "float",
+          "unit": "degC",
+          "description": "SLtmp, in degrees Celsius."
+        },
+        {
+          "name": "wind",
+          "type": "float",
+          "unit": "speed",
+          "description": "The wind speed around the aircraft, in knots."
+        },
+        {
+          "name": "wind",
+          "type": "float",
+          "unit": "dir",
+          "description": "The wind direction, in degrees clockwise deviation from north. Wind blowing from north to south has direction 0.0, while wind blowing from west to east has direction 270.0."
+        },
+        {
+          "name": "trb",
+          "type": "float",
+          "unit": "locl",
+          "description": "Amount of local turbulence."
+        },
+        {
+          "name": "prec",
+          "type": "float",
+          "unit": "locl",
+          "description": "Amount of local precipitation."
+        },
+        {
+          "name": "hail",
+          "type": "float",
+          "unit": "locl",
+          "description": "Amount of local hail."
+        }
+      ]
+    },
+    {
+      "name": "Atmosphere: aircraft",
+      "description": "Atmosphere: aircraft",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "AMprs",
+          "type": "float",
+          "unit": "inHG",
+          "description": "AMprs, in inches mercury."
+        },
+        {
+          "name": "AMtmp",
+          "type": "float",
+          "unit": "degC",
+          "description": "AMtmp, in degrees Celsius."
+        },
+        {
+          "name": "LEtmp",
+          "type": "float",
+          "unit": "degC",
+          "description": "LEtmp, in degrees Celsius."
+        },
+        {
+          "name": "dens",
+          "type": "float",
+          "unit": "ratio",
+          "description": "The aircraft’s density ratio."
+        },
+        {
+          "name": "A",
+          "type": "float",
+          "unit": "ktas",
+          "description": "A, in knots true airspeed."
+        },
+        {
+          "name": "Q",
+          "type": "float",
+          "unit": "psf",
+          "description": "Q, dynamic pressure or velocity pressure, in pounds per square foot."
+        },
+        {
+          "name": "gravi",
+          "type": "float",
+          "unit": "fts2",
+          "description": "Gravitational force, in feet per second squared."
+        }
+      ]
+    },
+    {
+      "name": "System pressures",
+      "description": "System pressures",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "baro",
+          "type": "float",
+          "unit": "inHG",
+          "description": "Barometric pressure, in inches mercury."
+        },
+        {
+          "name": "edens",
+          "type": "float",
+          "unit": "part",
+          "description": "undefined"
+        },
+        {
+          "name": "vacum",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        },
+        {
+          "name": "elec",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        },
+        {
+          "name": "AHRS",
+          "type": "float",
+          "unit": "ratio",
+          "description": "Pressure in the attitude heading reference system (AHRS), as a ratio to normal."
+        },
+        {
+          "name": "Joystick aileron",
+          "type": "float",
+          "unit": "elevator, and rudder input (joystick ail/elv/rud)",
+          "description": ""
+        },
+        {
+          "name": "elev",
+          "type": "float",
+          "unit": "yoke1",
+          "description": "The user’s elevator input, as a ratio to full upward deflection. For instance, a value of –1.000 indicated the user is commanding the aircraft’s nose down as fast as possible."
+        },
+        {
+          "name": "ailrn",
+          "type": "float",
+          "unit": "yoke1",
+          "description": "The user’s aileron input, as a ratio to full rightward deflection. For instance, a value of –1.000 indicated the user is commanding the aircraft to roll left as fast as possible."
+        },
+        {
+          "name": "ruddr",
+          "type": "float",
+          "unit": "yoke1",
+          "description": "The user’s rudder input, as a ratio to full rightward deflection. For instance, a value of –1.000 indicated the user is commanding the aircraft to yaw left as fast as possible."
+        }
+      ]
+    },
+    {
+      "name": "Other flight controls",
+      "description": "Other flight controls",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "vect",
+          "type": "float",
+          "unit": "rqst",
+          "description": "The requested thrust vectoring."
+        },
+        {
+          "name": "sweep",
+          "type": "float",
+          "unit": "rqst",
+          "description": "The requested wing sweep."
+        },
+        {
+          "name": "incid",
+          "type": "float",
+          "unit": "rqst",
+          "description": "The requested wing incidence."
+        },
+        {
+          "name": "dihed",
+          "type": "float",
+          "unit": "rqst",
+          "description": "The requested wing dihedral."
+        },
+        {
+          "name": "retra",
+          "type": "float",
+          "unit": "rqst",
+          "description": "The requested wing retraction."
+        },
+        {
+          "name": "water",
+          "type": "float",
+          "unit": "jetts",
+          "description": "Water jettisoned."
+        },
+        {
+          "name": "Artificial stability inputs for aileron",
+          "type": "float",
+          "unit": "elevator, and rudder (art stab ail/elv/rud)",
+          "description": ""
+        },
+        {
+          "name": "elev",
+          "type": "float",
+          "unit": "astab",
+          "description": "The artificial stability system’s elevator input, as a ratio to full upward deflection."
+        },
+        {
+          "name": "ailrn",
+          "type": "float",
+          "unit": "astab",
+          "description": "The artificial stability system’s aileron input, as a ratio to full rightward deflection."
+        },
+        {
+          "name": "ruddr",
+          "type": "float",
+          "unit": "astab",
+          "description": "The artificial stability system’s aileron input, as a ratio to full rightward deflection."
+        },
+        {
+          "name": "Flight control deflections for aileron",
+          "type": "float",
+          "unit": "elevator, and rudder (flight con ail/elv/rud)",
+          "description": ""
+        },
+        {
+          "name": "elev",
+          "type": "float",
+          "unit": "surf",
+          "description": "The proportion of the elevator deflected for upward pitch. If the elevators and flight inputs are in sync, this will match the combined yoke and artificial stability system input."
+        },
+        {
+          "name": "ailrn",
+          "type": "float",
+          "unit": "surf",
+          "description": "The proportion of the aileron deflected for rightward roll. If the elevators and flight inputs are in sync, this will match the combined yoke and artificial stability system input."
+        },
+        {
+          "name": "ruddr",
+          "type": "float",
+          "unit": "surf",
+          "description": "The proportion of the rudder deflected for rightward yaw. If the elevators and flight inputs are in sync, this will match the combined yoke and artificial stability system input."
+        },
+        {
+          "name": "nwhel",
+          "type": "float",
+          "unit": "steer",
+          "description": "The nosewheel’s direction, in degrees of deviation from pointing straight ahead. For instance, a value of –31.000 indicated the wheel is pointed left 31 degrees."
+        }
+      ]
+    },
+    {
+      "name": "Wing sweep and thrust vectoring (wing sweep/thrust vect)",
+      "description": "Wing sweep and thrust vectoring (wing sweep/thrust vect)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "sweep",
+          "type": "float",
+          "unit": "1, deg",
+          "description": "The craft’s wing sweep, in degrees back from normal."
+        },
+        {
+          "name": "sweep",
+          "type": "float",
+          "unit": "2, deg",
+          "description": "The craft’s wing sweep, in degrees back from normal."
+        },
+        {
+          "name": "sweep",
+          "type": "float",
+          "unit": "h, deg",
+          "description": "The craft’s wing sweep, in degrees."
+        },
+        {
+          "name": "vect",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        },
+        {
+          "name": "sweep",
+          "type": "float",
+          "unit": "ratio",
+          "description": "The craft’s wing sweep, as a ratio to fully forward."
+        },
+        {
+          "name": "incid",
+          "type": "float",
+          "unit": "ratio",
+          "description": "The craft’s wing incidence, as a ratio to fully angled."
+        },
+        {
+          "name": "dihed",
+          "type": "float",
+          "unit": "ratio",
+          "description": "The craft’s wing dihedral, as a ratio to fully angled."
+        },
+        {
+          "name": "retra",
+          "type": "float",
+          "unit": "ratio",
+          "description": "The craft’s wing retraction, as a ratio to fully retracted."
+        },
+        {
+          "name": "Trim",
+          "type": "float",
+          "unit": "flaps, slats, and speedbrakes (trim/flap/slat/s-brakes)",
+          "description": ""
+        },
+        {
+          "name": "trim",
+          "type": "float",
+          "unit": "elev",
+          "description": "Elevator trim."
+        },
+        {
+          "name": "trim",
+          "type": "float",
+          "unit": "ailrn",
+          "description": "Aileron trim."
+        },
+        {
+          "name": "trim",
+          "type": "float",
+          "unit": "ruddr",
+          "description": "Rudder trim."
+        },
+        {
+          "name": "flap",
+          "type": "float",
+          "unit": "handl",
+          "description": "undefined"
+        },
+        {
+          "name": "flap",
+          "type": "float",
+          "unit": "postn",
+          "description": "Flap position."
+        },
+        {
+          "name": "slat",
+          "type": "float",
+          "unit": "ratio",
+          "description": "Slat position."
+        },
+        {
+          "name": "sbrak",
+          "type": "float",
+          "unit": "handl",
+          "description": ""
+        },
+        {
+          "name": "sbrak",
+          "type": "float",
+          "unit": "postn",
+          "description": "Speedbrake position."
+        }
+      ]
+    },
+    {
+      "name": "Landing gear and brakes (gear/brakes)",
+      "description": "Landing gear and brakes (gear/brakes)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "gear",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Gear extended status."
+        },
+        {
+          "name": "wbrak",
+          "type": "float",
+          "unit": "part",
+          "description": "undefined"
+        },
+        {
+          "name": "lbrak",
+          "type": "float",
+          "unit": "part",
+          "description": "Left toe brake depression."
+        },
+        {
+          "name": "rbrak",
+          "type": "float",
+          "unit": "part",
+          "description": "Right toe brake depression."
+        }
+      ]
+    },
+    {
+      "name": "Angular moments",
+      "description": "Angular moments",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "L",
+          "type": "float",
+          "unit": "ftlb",
+          "description": "Roll torque, in foot-pounds, about the long axis, which we call the z axis."
+        },
+        {
+          "name": "M",
+          "type": "float",
+          "unit": "ftlb",
+          "description": "Pitch torque, in foot-pounds, about the lateral axis, which we call the x axis."
+        },
+        {
+          "name": "N",
+          "type": "float",
+          "unit": "ftlb",
+          "description": "Yaw torque, in foot-pounds, about the vertical axis, which we call the y axis."
+        }
+      ]
+    },
+    {
+      "name": "",
+      "description": "",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "Q",
+          "type": "float",
+          "unit": "rad/s",
+          "description": "Pitch rate, measured in body-axes (when all is working as it should)."
+        },
+        {
+          "name": "P",
+          "type": "float",
+          "unit": "rad/s",
+          "description": "Roll rate, measured in body-axes (when all is working as it should)."
+        },
+        {
+          "name": "R",
+          "type": "float",
+          "unit": "rad/s",
+          "description": "Yaw rate, measured in body-axes (when all is working as it should)."
+        },
+        {
+          "name": "Pitch",
+          "type": "float",
+          "unit": "roll, headings",
+          "description": ""
+        },
+        {
+          "name": "pitch",
+          "type": "float",
+          "unit": "deg",
+          "description": "The aircraft’s pitch, measured in body-axis Euler angles."
+        },
+        {
+          "name": "roll",
+          "type": "float",
+          "unit": "deg",
+          "description": "The aircraft’s roll, measured in body-axis Euler angles."
+        },
+        {
+          "name": "hding",
+          "type": "float",
+          "unit": "true",
+          "description": "The aircraft’s true heading, measured in body-axis Euler angles."
+        },
+        {
+          "name": "hding",
+          "type": "float",
+          "unit": "mag",
+          "description": "The aircraft’s magnetic heading, in degrees."
+        },
+        {
+          "name": "Angle of attack",
+          "type": "float",
+          "unit": "sideslip, and paths (AoA, side-slip, paths)",
+          "description": ""
+        },
+        {
+          "name": "alpha",
+          "type": "float",
+          "unit": "deg",
+          "description": "The aircraft’s angle of attack, in degrees."
+        },
+        {
+          "name": "beta",
+          "type": "float",
+          "unit": "deg",
+          "description": "The aircraft’s angle of sideslip, in degrees."
+        },
+        {
+          "name": "hpath",
+          "type": "float",
+          "unit": "deg",
+          "description": "undefined"
+        },
+        {
+          "name": "vpath",
+          "type": "float",
+          "unit": "deg",
+          "description": "undefined"
+        },
+        {
+          "name": "slip",
+          "type": "float",
+          "unit": "deg",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Magnetic compass (mag compass)",
+      "description": "Magnetic compass (mag compass)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "mag",
+          "type": "float",
+          "unit": "comp",
+          "description": "undefined"
+        },
+        {
+          "name": "mavar",
+          "type": "float",
+          "unit": "deg",
+          "description": "undefined"
+        },
+        {
+          "name": "Latitude",
+          "type": "float",
+          "unit": "longitude, and altitude (lat, lon, altitude)",
+          "description": ""
+        },
+        {
+          "name": "lat",
+          "type": "float",
+          "unit": "deg",
+          "description": "The aircraft’s latitudinal location, in degrees."
+        },
+        {
+          "name": "lon",
+          "type": "float",
+          "unit": "deg",
+          "description": "The aircraft’s longitudinal location, in degrees."
+        },
+        {
+          "name": "alt",
+          "type": "float",
+          "unit": "ftmsl",
+          "description": "The aircraft’s altitude, in feet above mean sea level."
+        },
+        {
+          "name": "alt",
+          "type": "float",
+          "unit": "ftagl",
+          "description": "The aircraft’s altitude, in feet above ground level."
+        },
+        {
+          "name": "on",
+          "type": "float",
+          "unit": "runwy",
+          "description": "undefined"
+        },
+        {
+          "name": "alt",
+          "type": "float",
+          "unit": "ind",
+          "description": "undefined"
+        },
+        {
+          "name": "lat",
+          "type": "float",
+          "unit": "south",
+          "description": "undefined"
+        },
+        {
+          "name": "lon",
+          "type": "float",
+          "unit": "west",
+          "description": "undefined"
+        },
+        {
+          "name": "Location",
+          "type": "float",
+          "unit": "velocity, and distance traveled (loc, vel, dist traveled)",
+          "description": ""
+        },
+        {
+          "name": "X",
+          "type": "float",
+          "unit": "m",
+          "description": "Relative to the inertial axes."
+        },
+        {
+          "name": "Y",
+          "type": "float",
+          "unit": "m",
+          "description": "Relative to the inertial axes."
+        },
+        {
+          "name": "Z",
+          "type": "float",
+          "unit": "m",
+          "description": "Relative to the inertial axes."
+        },
+        {
+          "name": "vX",
+          "type": "float",
+          "unit": "m/s",
+          "description": "Relative to the inertial axes."
+        },
+        {
+          "name": "vY",
+          "type": "float",
+          "unit": "m/s",
+          "description": "Relative to the inertial axes."
+        },
+        {
+          "name": "vZ",
+          "type": "float",
+          "unit": "m/s",
+          "description": "Relative to the inertial axes."
+        },
+        {
+          "name": "dist",
+          "type": "float",
+          "unit": "ft",
+          "description": "undefined"
+        },
+        {
+          "name": "dist",
+          "type": "float",
+          "unit": "nm",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Latitude for all aircraft (all planes: lat)",
+      "description": "Latitude for all aircraft (all planes: lat)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "lat n",
+          "type": "float",
+          "unit": "deg",
+          "description": "Aircraft n’s latitudinal location (zero if craft n does not exist)."
+        }
+      ]
+    },
+    {
+      "name": "Longitude for all aircraft (all planes: lon)",
+      "description": "Longitude for all aircraft (all planes: lon)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "lon n",
+          "type": "float",
+          "unit": "deg",
+          "description": "Aircraft n’s longitudinal location (zero if craft n does not exist)."
+        }
+      ]
+    },
+    {
+      "name": "Altitude for all aircraft (all planes: alt)",
+      "description": "Altitude for all aircraft (all planes: alt)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "alt n",
+          "type": "float",
+          "unit": "ftmsl",
+          "description": "Aircraft n’s altitude location (zero if craft n does not exist)."
+        }
+      ]
+    },
+    {
+      "name": "Commanded throttle (throttle command)",
+      "description": "Commanded throttle (throttle command)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "thron",
+          "type": "float",
+          "unit": "part",
+          "description": "Aircraft n’s commanded throttle."
+        }
+      ]
+    },
+    {
+      "name": "Actual throttle (throttle actual)",
+      "description": "Actual throttle (throttle actual)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "thron",
+          "type": "float",
+          "unit": "part",
+          "description": "Aircraft n’s actual throttle."
+        }
+      ]
+    },
+    {
+      "name": "Engine or propeller mode (feather-norm-beta-revers)",
+      "description": "Engine or propeller mode (feather-norm-beta-revers)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "moden",
+          "type": "float",
+          "unit": "0123",
+          "description": "Engine n’s current “mode,” where 0 corresponds to feathered, 1 corresponds to normal, 2 to beta, and 3 to reverse thrust."
+        }
+      ]
+    },
+    {
+      "name": "Propeller setting (prop setting)",
+      "description": "Propeller setting (prop setting)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "propn",
+          "type": "float",
+          "unit": "set",
+          "description": "Aircraft n’s propeller setting."
+        }
+      ]
+    },
+    {
+      "name": "Mixture setting",
+      "description": "Mixture setting",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "mixtn",
+          "type": "float",
+          "unit": "ratio",
+          "description": "Aircraft n’s mixture setting."
+        }
+      ]
+    },
+    {
+      "name": "Carburetor heat setting (carb heat setting)",
+      "description": "Carburetor heat setting (carb heat setting)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "heatn",
+          "type": "float",
+          "unit": "ratio",
+          "description": "Aircraft n’s carburetor heat setting."
+        }
+      ]
+    },
+    {
+      "name": "Cowl flap setting",
+      "description": "Cowl flap setting",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "cowln",
+          "type": "float",
+          "unit": "set",
+          "description": "Aircraft n’s cowl flap setting."
+        }
+      ]
+    },
+    {
+      "name": "Magneto settings",
+      "description": "Magneto settings",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "magnn",
+          "type": "float",
+          "unit": "set",
+          "description": "Aircraft n’s magneto setting."
+        }
+      ]
+    },
+    {
+      "name": "Starter timeout",
+      "description": "Starter timeout",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "starn",
+          "type": "float",
+          "unit": "sec",
+          "description": "Aircraft n’s starter timeout."
+        }
+      ]
+    },
+    {
+      "name": "Engine power",
+      "description": "Engine power",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "power",
+          "type": "float",
+          "unit": "n, hp",
+          "description": "Engine n’s power, in horsepower."
+        }
+      ]
+    },
+    {
+      "name": "Engine thrust",
+      "description": "Engine thrust",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "thrst",
+          "type": "float",
+          "unit": "n, lb",
+          "description": "The thrust, in pounds, generated by engine n."
+        }
+      ]
+    },
+    {
+      "name": "Engine torque",
+      "description": "Engine torque",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "trq n",
+          "type": "float",
+          "unit": "ftlb",
+          "description": "The torque, in foot-pounds, generated by engine n."
+        }
+      ]
+    },
+    {
+      "name": "Engine RPM",
+      "description": "Engine RPM",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "rpm n",
+          "type": "float",
+          "unit": "engin",
+          "description": "The current RPM of engine n."
+        }
+      ]
+    },
+    {
+      "name": "Propeller RPM (prop RPM)",
+      "description": "Propeller RPM (prop RPM)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "rpm n",
+          "type": "float",
+          "unit": "prop",
+          "description": "The current RPM of propeller n."
+        }
+      ]
+    },
+    {
+      "name": "Propeller pitch (prop pitch)",
+      "description": "Propeller pitch (prop pitch)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "ptchn",
+          "type": "float",
+          "unit": "deg",
+          "description": "The current pitch of propeller n."
+        }
+      ]
+    },
+    {
+      "name": "Slipstream/propwash/jetwash (propwash/jetwash)",
+      "description": "Slipstream/propwash/jetwash (propwash/jetwash)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "pwash",
+          "type": "float",
+          "unit": "kt",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "N1",
+      "description": "N1",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "N1 n",
+          "type": "float",
+          "unit": "pcnt",
+          "description": "The current N1 for engine n."
+        }
+      ]
+    },
+    {
+      "name": "N2",
+      "description": "N2",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "N2 n",
+          "type": "float",
+          "unit": "pcnt",
+          "description": "The current N2 for engine n."
+        }
+      ]
+    },
+    {
+      "name": "Manifold pressure (MP)",
+      "description": "Manifold pressure (MP)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "MP n",
+          "type": "float",
+          "unit": "inhg",
+          "description": "The current manifold pressure for engine n, in inches mercury."
+        }
+      ]
+    },
+    {
+      "name": "Engine pressure ratio (EPR)",
+      "description": "Engine pressure ratio (EPR)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "EPR n",
+          "type": "float",
+          "unit": "part",
+          "description": "The current engine pressure ratio for engine n."
+        }
+      ]
+    },
+    {
+      "name": "Fuel flow (FF)",
+      "description": "Fuel flow (FF)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "FF n",
+          "type": "float",
+          "unit": "lb/h",
+          "description": "The current fuel flow for engine n, in pounds per hour."
+        }
+      ]
+    },
+    {
+      "name": "Interstage turbine temperature (ITT)",
+      "description": "Interstage turbine temperature (ITT)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "ITT n",
+          "type": "float",
+          "unit": "deg",
+          "description": "The current interstage turbine temperature for engine n."
+        }
+      ]
+    },
+    {
+      "name": "Exhaust gas temperature (EGT)",
+      "description": "Exhaust gas temperature (EGT)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "EGT n",
+          "type": "float",
+          "unit": "deg",
+          "description": "The current exhaust gas temperature for engine n."
+        }
+      ]
+    },
+    {
+      "name": "Cylinder head temperature (CHT)",
+      "description": "Cylinder head temperature (CHT)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "CHT n",
+          "type": "float",
+          "unit": "deg",
+          "description": "The current cylinder head temperature for engine n."
+        }
+      ]
+    },
+    {
+      "name": "Oil pressure",
+      "description": "Oil pressure",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "OILPn",
+          "type": "float",
+          "unit": "psi",
+          "description": "The current oil pressure for engine n, in pounds per square inch."
+        }
+      ]
+    },
+    {
+      "name": "Oil temperature (Oil temp)",
+      "description": "Oil temperature (Oil temp)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "OILTn",
+          "type": "float",
+          "unit": "deg",
+          "description": "The current oil temperature for engine n."
+        }
+      ]
+    },
+    {
+      "name": "Fuel pressure",
+      "description": "Fuel pressure",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "FUEPn",
+          "type": "float",
+          "unit": "psi",
+          "description": "The current fuel pressure for engine n, in pounds per square inch."
+        }
+      ]
+    },
+    {
+      "name": "Generator amperage",
+      "description": "Generator amperage",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "genrn",
+          "type": "float",
+          "unit": "amp",
+          "description": "The current generator amperage for generator n."
+        }
+      ]
+    },
+    {
+      "name": "Battery amperage",
+      "description": "Battery amperage",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "battn",
+          "type": "float",
+          "unit": "amp",
+          "description": "The current batter amperage for battery n."
+        }
+      ]
+    },
+    {
+      "name": "Battery voltage",
+      "description": "Battery voltage",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "battn",
+          "type": "float",
+          "unit": "volt",
+          "description": "The current battery voltage for battery n."
+        }
+      ]
+    },
+    {
+      "name": "Fuel pump on/off",
+      "description": "Fuel pump on/off",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "pumpn",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Fuel pump n’s status."
+        }
+      ]
+    },
+    {
+      "name": "Idle speed lo/hi",
+      "description": "Idle speed lo/hi",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "battn",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Battery n’s status."
+        }
+      ]
+    },
+    {
+      "name": "Generator on/off",
+      "description": "Generator on/off",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "idlen",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Engine n’s idle speed."
+        }
+      ]
+    },
+    {
+      "name": "Battery on/off",
+      "description": "Battery on/off",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "battn",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Battery n’s status."
+        }
+      ]
+    },
+    {
+      "name": "Generator on/off",
+      "description": "Generator on/off",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "genrn",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Generator n’s status."
+        }
+      ]
+    },
+    {
+      "name": "Inverter on/off",
+      "description": "Inverter on/off",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "invrn",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Inverter n’s status."
+        }
+      ]
+    },
+    {
+      "name": "FADEC on/off",
+      "description": "FADEC on/off",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "fadec",
+          "type": "float",
+          "unit": "0/1",
+          "description": "The FADEC’s status."
+        }
+      ]
+    },
+    {
+      "name": "Igniter on/off",
+      "description": "Igniter on/off",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "ignin",
+          "type": "float",
+          "unit": "0/1",
+          "description": "Igniter n’s status."
+        }
+      ]
+    },
+    {
+      "name": "Fuel weights",
+      "description": "Fuel weights",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "fuel",
+          "type": "float",
+          "unit": "n lb",
+          "description": "Fuel tank n’s weight, in pounds."
+        }
+      ]
+    },
+    {
+      "name": "Payload weights and center of gravity (payload weights and CG)",
+      "description": "Payload weights and center of gravity (payload weights and CG)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "empty",
+          "type": "float",
+          "unit": "lb",
+          "description": "The aircraft’s empty weight, in pounds."
+        },
+        {
+          "name": "payld",
+          "type": "float",
+          "unit": "lb",
+          "description": "The aircraft’s payload weight, in pounds."
+        },
+        {
+          "name": "fuel",
+          "type": "float",
+          "unit": "totlb",
+          "description": "The total weight of the aircraft’s fuel, in pounds."
+        },
+        {
+          "name": "jetti",
+          "type": "float",
+          "unit": "lb",
+          "description": "The aircraft’s jettisonable weight, in pounds."
+        },
+        {
+          "name": "curnt",
+          "type": "float",
+          "unit": "lb",
+          "description": "The aircraft’s current weight, in pounds."
+        },
+        {
+          "name": "maxim",
+          "type": "float",
+          "unit": "lb",
+          "description": "The aircraft’s maximum weight, in pounds."
+        },
+        {
+          "name": "cg",
+          "type": "float",
+          "unit": "ftref",
+          "description": "The aircraft’s center of gravity, measured in feet behind the reference point."
+        },
+        {
+          "name": "Aerodynamic forces",
+          "type": "float",
+          "unit": "in wind axes (aero forces)",
+          "description": ""
+        },
+        {
+          "name": "lift",
+          "type": "float",
+          "unit": "lb",
+          "description": "The lift acting on the aircraft, in pounds."
+        },
+        {
+          "name": "drag",
+          "type": "float",
+          "unit": "lb",
+          "description": "The drag acting on the aircraft, in pounds."
+        },
+        {
+          "name": "side",
+          "type": "float",
+          "unit": "lb",
+          "description": "The side forces acting on the aircraft, in pounds."
+        }
+      ]
+    },
+    {
+      "name": "Engine forces",
+      "description": "Engine forces",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "norml",
+          "type": "float",
+          "unit": "lb",
+          "description": "undefined"
+        },
+        {
+          "name": "axial",
+          "type": "float",
+          "unit": "lb",
+          "description": "undefined"
+        },
+        {
+          "name": "side",
+          "type": "float",
+          "unit": "lb",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Landing gear vertical force (landing gear vert force)",
+      "description": "Landing gear vertical force (landing gear vert force)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "gear",
+          "type": "float",
+          "unit": "lb",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Landing gear deployment",
+      "description": "Landing gear deployment",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "gear",
+          "type": "float",
+          "unit": "rat",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Lift-to-drag ratio and coefficients (lift over drag coeffs)",
+      "description": "Lift-to-drag ratio and coefficients (lift over drag coeffs)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "L/D",
+          "type": "float",
+          "unit": "ratio",
+          "description": "The aircraft’s lift-to-drag ratio."
+        },
+        {
+          "name": "cl",
+          "type": "float",
+          "unit": "total",
+          "description": "undefined"
+        },
+        {
+          "name": "cd",
+          "type": "float",
+          "unit": "total",
+          "description": "undefined"
+        },
+        {
+          "name": "L/D",
+          "type": "float",
+          "unit": "*etaP",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Propeller efficiency (prop efficiency)",
+      "description": "Propeller efficiency (prop efficiency)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "Peffn",
+          "type": "float",
+          "unit": "ratio",
+          "description": "Propeller n’s efficiency ratio."
+        }
+      ]
+    },
+    {
+      "name": "Aileron deflections (defs: ailerons)",
+      "description": "Aileron deflections (defs: ailerons)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "Lailn,n",
+          "type": "float",
+          "unit": "deg",
+          "description": "The deflection of left aileron n, in degrees."
+        },
+        {
+          "name": "Railn",
+          "type": "float",
+          "unit": "n, deg",
+          "description": "The deflection of right aileron n, in degrees."
+        }
+      ]
+    },
+    {
+      "name": "Roll spoiler deflection (defs: roll spoilers)",
+      "description": "Roll spoiler deflection (defs: roll spoilers)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "Lsplr,n",
+          "type": "float",
+          "unit": "deg",
+          "description": "The deflection of left spoiler n, in degrees."
+        },
+        {
+          "name": "Rsplr",
+          "type": "float",
+          "unit": "n, deg",
+          "description": "The deflection of right spoiler n, in degrees."
+        }
+      ]
+    },
+    {
+      "name": "Elevator deflections (defs: elevators)",
+      "description": "Elevator deflections (defs: elevators)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "elevn",
+          "type": "float",
+          "unit": "deg",
+          "description": "The deflection of elevator n, in degrees."
+        }
+      ]
+    },
+    {
+      "name": "Rudder deflection (defs: rudders)",
+      "description": "Rudder deflection (defs: rudders)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "rudrn",
+          "type": "float",
+          "unit": "deg",
+          "description": "The deflection of rudder n, in degrees."
+        }
+      ]
+    },
+    {
+      "name": "Yaw brake deflections (defs: yaw brakes)",
+      "description": "Yaw brake deflections (defs: yaw brakes)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "Lyawb",
+          "type": "float",
+          "unit": "deg",
+          "description": "The deflection of the left yaw brake, in degrees."
+        },
+        {
+          "name": "Ryawb",
+          "type": "float",
+          "unit": "deg",
+          "description": "The deflection of the right yaw brake, in degrees."
+        }
+      ]
+    },
+    {
+      "name": "Control forces",
+      "description": "Control forces",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "pitch",
+          "type": "float",
+          "unit": "lb",
+          "description": "The pitch forces acting on the controls in the pilot’s hands."
+        },
+        {
+          "name": "roll",
+          "type": "float",
+          "unit": "lb",
+          "description": "The roll forces acting on the controls in the pilot’s hands."
+        },
+        {
+          "name": "hdng",
+          "type": "float",
+          "unit": "lb",
+          "description": "The heading forces acting on the controls in the pilot’s hands."
+        },
+        {
+          "name": "l-brk",
+          "type": "float",
+          "unit": "lb",
+          "description": "The left brake forces acting on the controls at the pilot’s feet."
+        },
+        {
+          "name": "r-brk",
+          "type": "float",
+          "unit": "lb",
+          "description": "The right brake forces acting on the controls at the pilot’s feet."
+        }
+      ]
+    },
+    {
+      "name": "Total vertical thrust vectors (total vert thrust vects)",
+      "description": "Total vertical thrust vectors (total vert thrust vects)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "vertn",
+          "type": "float",
+          "unit": "tvect",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Total lateral thrust vectors (total lat thrust vects)",
+      "description": "Total lateral thrust vectors (total lat thrust vects)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "latrn",
+          "type": "float",
+          "unit": "tvect",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Pitch cyclic disc tilts",
+      "description": "Pitch cyclic disc tilts",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "pitch",
+          "type": "float",
+          "unit": "cycli",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Roll cyclic disc tilts",
+      "description": "Roll cyclic disc tilts",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "roll",
+          "type": "float",
+          "unit": "cycli",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Pitch cyclic flapping",
+      "description": "Pitch cyclic flapping",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "pitch",
+          "type": "float",
+          "unit": "flap",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Roll cyclic flapping",
+      "description": "Roll cyclic flapping",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "roll",
+          "type": "float",
+          "unit": "flap",
+          "description": ""
+        },
+        {
+          "name": "Ground effect (lift) from wings (grnd effect lift",
+          "type": "float",
+          "unit": "wings)",
+          "description": ""
+        },
+        {
+          "name": "wingn",
+          "type": "float",
+          "unit": "L cl*",
+          "description": ""
+        },
+        {
+          "name": "wingn",
+          "type": "float",
+          "unit": "R cl*",
+          "description": "undefined"
+        },
+        {
+          "name": "Ground effect (drag) from wings (grnd effect drag",
+          "type": "float",
+          "unit": "wings)",
+          "description": ""
+        },
+        {
+          "name": "wingn",
+          "type": "float",
+          "unit": "Lcdi*",
+          "description": "undefined"
+        },
+        {
+          "name": "wingn",
+          "type": "float",
+          "unit": "Rcdi*",
+          "description": "undefined"
+        },
+        {
+          "name": "Ground effect (wash) from wings (grnd effect wash",
+          "type": "float",
+          "unit": "wings)",
+          "description": ""
+        },
+        {
+          "name": "wingn",
+          "type": "float",
+          "unit": "wash*",
+          "description": "undefined"
+        },
+        {
+          "name": "Ground effect (lift) from stabilizers (grnd effect lift",
+          "type": "float",
+          "unit": "stabs)",
+          "description": ""
+        },
+        {
+          "name": "hstab",
+          "type": "float",
+          "unit": "L cl*",
+          "description": "undefined"
+        },
+        {
+          "name": "hstab",
+          "type": "float",
+          "unit": "R cl*",
+          "description": "undefined"
+        },
+        {
+          "name": "vstb1",
+          "type": "float",
+          "unit": "cl*",
+          "description": "undefined"
+        },
+        {
+          "name": "Ground effect (drag) from stabilizers (grnd effect drag",
+          "type": "float",
+          "unit": "stabs)",
+          "description": ""
+        },
+        {
+          "name": "hstab",
+          "type": "float",
+          "unit": "Lcdi*",
+          "description": "undefined"
+        },
+        {
+          "name": "hstab",
+          "type": "float",
+          "unit": "Rcdi*",
+          "description": "undefined"
+        },
+        {
+          "name": "vstbn",
+          "type": "float",
+          "unit": "cdi*",
+          "description": "undefined"
+        },
+        {
+          "name": "Ground effect (wash) from stabilizers (grnd effect wash",
+          "type": "float",
+          "unit": "stabs)",
+          "description": ""
+        },
+        {
+          "name": "hstab",
+          "type": "float",
+          "unit": "wash*",
+          "description": "undefined"
+        },
+        {
+          "name": "vstbn",
+          "type": "float",
+          "unit": "wash*",
+          "description": "undefined"
+        },
+        {
+          "name": "Ground effect (lift) from propellers (grnd effect lift",
+          "type": "float",
+          "unit": "props)",
+          "description": ""
+        },
+        {
+          "name": "propn",
+          "type": "float",
+          "unit": "cl*",
+          "description": ""
+        },
+        {
+          "name": "Ground effect (drag) from propellers (grnd effect drag",
+          "type": "float",
+          "unit": "props)",
+          "description": ""
+        },
+        {
+          "name": "propn",
+          "type": "float",
+          "unit": "cdi*",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "name": "Wing lift",
+      "description": "Wing lift",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "wingn",
+          "type": "float",
+          "unit": "lift",
+          "description": "The lift generated by wing n."
+        }
+      ]
+    },
+    {
+      "name": "Wing drag",
+      "description": "Wing drag",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "wingn",
+          "type": "float",
+          "unit": "drag",
+          "description": "The drag generated by wing n."
+        }
+      ]
+    },
+    {
+      "name": "Stabilizer lift (stab lift)",
+      "description": "Stabilizer lift (stab lift)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "hstab",
+          "type": "float",
+          "unit": "lift",
+          "description": "The lift generated by the horizontal stabilizer."
+        },
+        {
+          "name": "vstbn",
+          "type": "float",
+          "unit": "lift",
+          "description": "The lift generated by the vertical stabilizer."
+        }
+      ]
+    },
+    {
+      "name": "Stabilizer drag (stab drag)",
+      "description": "Stabilizer drag (stab drag)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "hstab",
+          "type": "float",
+          "unit": "drag",
+          "description": "The drag generated by the horizontal stabilizer."
+        },
+        {
+          "name": "vstbn",
+          "type": "float",
+          "unit": "drag",
+          "description": "The drag generated by the vertical stabilizer."
+        }
+      ]
+    },
+    {
+      "name": "COM 1/2 frequency",
+      "description": "COM 1/2 frequency",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "COM n",
+          "type": "float",
+          "unit": "freq",
+          "description": "The current frequency of the COM n radio."
+        },
+        {
+          "name": "COM n",
+          "type": "float",
+          "unit": "stby",
+          "description": "The standby frequency of the COM n radio."
+        },
+        {
+          "name": "COM",
+          "type": "float",
+          "unit": "xmt",
+          "description": "The transmit status of the COM n."
+        }
+      ]
+    },
+    {
+      "name": "NAV 1/2 frequency",
+      "description": "NAV 1/2 frequency",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "freq",
+          "description": "The current frequency of the NAV n radio."
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "stby",
+          "description": "The standby frequency of the NAV n radio."
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "type",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "NAV 1/2 OBS",
+      "description": "NAV 1/2 OBS",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "OBS",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "s-crs",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "flag",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "NAV n deflections",
+      "description": "NAV n deflections",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "n-typ",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "to-fr",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "m-crs",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "r-brg",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "dme-d",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "h-def",
+          "description": "undefined"
+        },
+        {
+          "name": "NAV n",
+          "type": "float",
+          "unit": "v-def",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "ADF 1/2 status",
+      "description": "ADF 1/2 status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "ADF n",
+          "type": "float",
+          "unit": "freq",
+          "description": "undefined"
+        },
+        {
+          "name": "ADF n",
+          "type": "float",
+          "unit": "card",
+          "description": "undefined"
+        },
+        {
+          "name": "ADF n",
+          "type": "float",
+          "unit": "r-brg",
+          "description": "undefined"
+        },
+        {
+          "name": "ADF n",
+          "type": "float",
+          "unit": "n-typ",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "DME status",
+      "description": "DME status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "DME",
+          "type": "float",
+          "unit": "nav01",
+          "description": "undefined"
+        },
+        {
+          "name": "DME",
+          "type": "float",
+          "unit": "mode",
+          "description": "undefined"
+        },
+        {
+          "name": "DME",
+          "type": "float",
+          "unit": "found",
+          "description": "undefined"
+        },
+        {
+          "name": "DME",
+          "type": "float",
+          "unit": "dist",
+          "description": "undefined"
+        },
+        {
+          "name": "DME",
+          "type": "float",
+          "unit": "speed",
+          "description": "undefined"
+        },
+        {
+          "name": "DME",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        },
+        {
+          "name": "DME",
+          "type": "float",
+          "unit": "n-typ",
+          "description": "undefined"
+        },
+        {
+          "name": "DME–3",
+          "type": "float",
+          "unit": "freq",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "GPS status",
+      "description": "GPS status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "GPS",
+          "type": "float",
+          "unit": "mode",
+          "description": "undefined"
+        },
+        {
+          "name": "GPS",
+          "type": "float",
+          "unit": "index",
+          "description": "undefined"
+        },
+        {
+          "name": "dist",
+          "type": "float",
+          "unit": "nm",
+          "description": "undefined"
+        },
+        {
+          "name": "OBS",
+          "type": "float",
+          "unit": "mag",
+          "description": "undefined"
+        },
+        {
+          "name": "crs",
+          "type": "float",
+          "unit": "mag",
+          "description": "undefined"
+        },
+        {
+          "name": "rel",
+          "type": "float",
+          "unit": "brng",
+          "description": "undefined"
+        },
+        {
+          "name": "hdef",
+          "type": "float",
+          "unit": "dots",
+          "description": "undefined"
+        },
+        {
+          "name": "vdef",
+          "type": "float",
+          "unit": "dots",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Transponder status (XPNDR status)",
+      "description": "Transponder status (XPNDR status)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "trans",
+          "type": "float",
+          "unit": "mode",
+          "description": "undefined"
+        },
+        {
+          "name": "trans",
+          "type": "float",
+          "unit": "sett",
+          "description": "undefined"
+        },
+        {
+          "name": "trans",
+          "type": "float",
+          "unit": "ID",
+          "description": "undefined"
+        },
+        {
+          "name": "trans",
+          "type": "float",
+          "unit": "inter",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Marker status",
+      "description": "Marker status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "OM",
+          "type": "float",
+          "unit": "morse",
+          "description": "Signal from outer marker (OM)"
+        },
+        {
+          "name": "MM",
+          "type": "float",
+          "unit": "morse",
+          "description": "Signal from middle marker (MM)"
+        },
+        {
+          "name": "IM",
+          "type": "float",
+          "unit": "morse",
+          "description": "Signal from inner marker (IM)"
+        },
+        {
+          "name": "audio",
+          "type": "float",
+          "unit": "activ",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Switches 1: electrical",
+      "description": "Switches 1: electrical",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "avio",
+          "type": "float",
+          "unit": "0/1",
+          "description": "The status of the AVIO switch."
+        },
+        {
+          "name": "nav",
+          "type": "float",
+          "unit": "lite",
+          "description": "The status of the navigation light switch."
+        },
+        {
+          "name": "beacn",
+          "type": "float",
+          "unit": "lite",
+          "description": "The status of the beacon switch."
+        },
+        {
+          "name": "strob",
+          "type": "float",
+          "unit": "lite",
+          "description": "The status of the strobe light switch."
+        },
+        {
+          "name": "land",
+          "type": "float",
+          "unit": "lite",
+          "description": "The status of the landing light switch."
+        },
+        {
+          "name": "taxi",
+          "type": "float",
+          "unit": "lite",
+          "description": "The status of the taxi light switch."
+        }
+      ]
+    },
+    {
+      "name": "Switches 2: EFIS",
+      "description": "Switches 2: EFIS",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "ECAM",
+          "type": "float",
+          "unit": "mode",
+          "description": "The ECAM mode."
+        },
+        {
+          "name": "EFIS",
+          "type": "float",
+          "unit": "sel n",
+          "description": "undefined"
+        },
+        {
+          "name": "HSI",
+          "type": "float",
+          "unit": "sel n",
+          "description": "undefined"
+        },
+        {
+          "name": "HSI",
+          "type": "float",
+          "unit": "arc",
+          "description": "undefined"
+        },
+        {
+          "name": "map",
+          "type": "float",
+          "unit": "r-sel",
+          "description": "undefined"
+        },
+        {
+          "name": "map",
+          "type": "float",
+          "unit": "range",
+          "description": "undefined"
+        },
+        {
+          "name": "Switches 3: Autopilot",
+          "type": "float",
+          "unit": "flight director, and head-up display (switches 3: AP/f-dir/HUD)",
+          "description": ""
+        },
+        {
+          "name": "ap",
+          "type": "float",
+          "unit": "src",
+          "description": "undefined"
+        },
+        {
+          "name": "fdir",
+          "type": "float",
+          "unit": "mode",
+          "description": "undefined"
+        },
+        {
+          "name": "fdir",
+          "type": "float",
+          "unit": "ptch",
+          "description": "undefined"
+        },
+        {
+          "name": "fdir",
+          "type": "float",
+          "unit": "roll",
+          "description": "undefined"
+        },
+        {
+          "name": "HUD",
+          "type": "float",
+          "unit": "power",
+          "description": "undefined"
+        },
+        {
+          "name": "HUD",
+          "type": "float",
+          "unit": "brite",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Switches 4: anti-ice",
+      "description": "Switches 4: anti-ice",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "deice",
+          "type": "float",
+          "unit": "all",
+          "description": "undefined"
+        },
+        {
+          "name": "deice",
+          "type": "float",
+          "unit": "inlet",
+          "description": "undefined"
+        },
+        {
+          "name": "deice",
+          "type": "float",
+          "unit": "prop",
+          "description": "undefined"
+        },
+        {
+          "name": "deice",
+          "type": "float",
+          "unit": "windo",
+          "description": "undefined"
+        },
+        {
+          "name": "deice-n",
+          "type": "float",
+          "unit": "pitot",
+          "description": "undefined"
+        },
+        {
+          "name": "deice",
+          "type": "float",
+          "unit": "AOA",
+          "description": "undefined"
+        },
+        {
+          "name": "deice",
+          "type": "float",
+          "unit": "wing",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Switches 5: anti-ice/fuel",
+      "description": "Switches 5: anti-ice/fuel",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "alt",
+          "type": "float",
+          "unit": "airn",
+          "description": "undefined"
+        },
+        {
+          "name": "auto",
+          "type": "float",
+          "unit": "ignit",
+          "description": "undefined"
+        },
+        {
+          "name": "manul",
+          "type": "float",
+          "unit": "ignit",
+          "description": "undefined"
+        },
+        {
+          "name": "l-eng",
+          "type": "float",
+          "unit": "tank",
+          "description": "undefined"
+        },
+        {
+          "name": "r-eng",
+          "type": "float",
+          "unit": "tank",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Switches 6: clutch and artificial stability (switches 6: clutch/astab)",
+      "description": "Switches 6: clutch and artificial stability (switches 6: clutch/astab)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "prero",
+          "type": "float",
+          "unit": "engag",
+          "description": "undefined"
+        },
+        {
+          "name": "clutc",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        },
+        {
+          "name": "art",
+          "type": "float",
+          "unit": "ptch",
+          "description": "undefined"
+        },
+        {
+          "name": "art",
+          "type": "float",
+          "unit": "roll",
+          "description": "undefined"
+        },
+        {
+          "name": "yaw",
+          "type": "float",
+          "unit": "damp",
+          "description": "undefined"
+        },
+        {
+          "name": "auto",
+          "type": "float",
+          "unit": "brake",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Switches 7: miscellaneous (switches 7: misc)",
+      "description": "Switches 7: miscellaneous (switches 7: misc)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "tot",
+          "type": "float",
+          "unit": "energ",
+          "description": "undefined"
+        },
+        {
+          "name": "radal",
+          "type": "float",
+          "unit": "feet",
+          "description": "undefined"
+        },
+        {
+          "name": "prop",
+          "type": "float",
+          "unit": "sync",
+          "description": "undefined"
+        },
+        {
+          "name": "fethr",
+          "type": "float",
+          "unit": "mode",
+          "description": "undefined"
+        },
+        {
+          "name": "puffr",
+          "type": "float",
+          "unit": "power",
+          "description": "undefined"
+        },
+        {
+          "name": "water",
+          "type": "float",
+          "unit": "scoop",
+          "description": "undefined"
+        },
+        {
+          "name": "arrst",
+          "type": "float",
+          "unit": "hook",
+          "description": "undefined"
+        },
+        {
+          "name": "chute",
+          "type": "float",
+          "unit": "deply",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Annunciators: general",
+      "description": "Annunciators: general",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "mast",
+          "type": "float",
+          "unit": "cau",
+          "description": "undefined"
+        },
+        {
+          "name": "mast",
+          "type": "float",
+          "unit": "war",
+          "description": "undefined"
+        },
+        {
+          "name": "mast",
+          "type": "float",
+          "unit": "accp",
+          "description": "undefined"
+        },
+        {
+          "name": "auto",
+          "type": "float",
+          "unit": "disco",
+          "description": "undefined"
+        },
+        {
+          "name": "low",
+          "type": "float",
+          "unit": "vacum",
+          "description": "undefined"
+        },
+        {
+          "name": "low",
+          "type": "float",
+          "unit": "volt",
+          "description": "undefined"
+        },
+        {
+          "name": "fuel",
+          "type": "float",
+          "unit": "quant",
+          "description": "undefined"
+        },
+        {
+          "name": "hyd",
+          "type": "float",
+          "unit": "press",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Annunciators: general",
+      "description": "Annunciators: general",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "yawda",
+          "type": "float",
+          "unit": "on",
+          "description": "undefined"
+        },
+        {
+          "name": "sbrk",
+          "type": "float",
+          "unit": "on",
+          "description": "undefined"
+        },
+        {
+          "name": "GPWS",
+          "type": "float",
+          "unit": "warn",
+          "description": "undefined"
+        },
+        {
+          "name": "ice",
+          "type": "float",
+          "unit": "warn",
+          "description": "undefined"
+        },
+        {
+          "name": "pitot",
+          "type": "float",
+          "unit": "off",
+          "description": "undefined"
+        },
+        {
+          "name": "cabin",
+          "type": "float",
+          "unit": "althi",
+          "description": "undefined"
+        },
+        {
+          "name": "afthr",
+          "type": "float",
+          "unit": "arm",
+          "description": "undefined"
+        },
+        {
+          "name": "ospd",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Annunciators: engine",
+      "description": "Annunciators: engine",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "fuel",
+          "type": "float",
+          "unit": "press",
+          "description": "undefined"
+        },
+        {
+          "name": "oil",
+          "type": "float",
+          "unit": "press",
+          "description": "undefined"
+        },
+        {
+          "name": "oil",
+          "type": "float",
+          "unit": "temp",
+          "description": "undefined"
+        },
+        {
+          "name": "inver",
+          "type": "float",
+          "unit": "warn",
+          "description": "undefined"
+        },
+        {
+          "name": "gener",
+          "type": "float",
+          "unit": "warn",
+          "description": "undefined"
+        },
+        {
+          "name": "chip",
+          "type": "float",
+          "unit": "detec",
+          "description": "undefined"
+        },
+        {
+          "name": "engin",
+          "type": "float",
+          "unit": "fire",
+          "description": "undefined"
+        },
+        {
+          "name": "ignit",
+          "type": "float",
+          "unit": "0/1",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Armed autopilot functions (autopilot arms)",
+      "description": "Armed autopilot functions (autopilot arms)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "nav",
+          "type": "float",
+          "unit": "arm",
+          "description": "undefined"
+        },
+        {
+          "name": "alt",
+          "type": "float",
+          "unit": "arm",
+          "description": "undefined"
+        },
+        {
+          "name": "app",
+          "type": "float",
+          "unit": "arm",
+          "description": "undefined"
+        },
+        {
+          "name": "vnav",
+          "type": "float",
+          "unit": "enab",
+          "description": "undefined"
+        },
+        {
+          "name": "vnav",
+          "type": "float",
+          "unit": "arm",
+          "description": "undefined"
+        },
+        {
+          "name": "vnav",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        },
+        {
+          "name": "gp",
+          "type": "float",
+          "unit": "enabl",
+          "description": "undefined"
+        },
+        {
+          "name": "app",
+          "type": "float",
+          "unit": "typ",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Autopilot modes",
+      "description": "Autopilot modes",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "auto",
+          "type": "float",
+          "unit": "throt",
+          "description": "undefined"
+        },
+        {
+          "name": "mode",
+          "type": "float",
+          "unit": "hding",
+          "description": "undefined"
+        },
+        {
+          "name": "mode",
+          "type": "float",
+          "unit": "alt",
+          "description": "undefined"
+        },
+        {
+          "name": "bac",
+          "type": "float",
+          "unit": "0/1",
+          "description": "undefined"
+        },
+        {
+          "name": "app",
+          "type": "float",
+          "unit": "",
+          "description": "undefined"
+        },
+        {
+          "name": "sync",
+          "type": "float",
+          "unit": "butn",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Autopilot values",
+      "description": "Autopilot values",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "set",
+          "type": "float",
+          "unit": "speed",
+          "description": "The desired speed setting for the autopilot."
+        },
+        {
+          "name": "set",
+          "type": "float",
+          "unit": "hding",
+          "description": "The desired heading setting for the autopilot."
+        },
+        {
+          "name": "set",
+          "type": "float",
+          "unit": "vvi",
+          "description": "The desired vertical velocity setting for the autopilot."
+        },
+        {
+          "name": "dial",
+          "type": "float",
+          "unit": "alt",
+          "description": "undefined"
+        },
+        {
+          "name": "vnav",
+          "type": "float",
+          "unit": "alt",
+          "description": "undefined"
+        },
+        {
+          "name": "use",
+          "type": "float",
+          "unit": "alt",
+          "description": "undefined"
+        },
+        {
+          "name": "sync",
+          "type": "float",
+          "unit": "roll",
+          "description": "undefined"
+        },
+        {
+          "name": "sync",
+          "type": "float",
+          "unit": "pitch",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Weapon status",
+      "description": "Weapon status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "hdng",
+          "type": "float",
+          "unit": "delta",
+          "description": "undefined"
+        },
+        {
+          "name": "pitch",
+          "type": "float",
+          "unit": "delta",
+          "description": "undefined"
+        },
+        {
+          "name": "R",
+          "type": "float",
+          "unit": "d/sec",
+          "description": "undefined"
+        },
+        {
+          "name": "Q",
+          "type": "float",
+          "unit": "d/sec",
+          "description": "undefined"
+        },
+        {
+          "name": "rudd",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        },
+        {
+          "name": "elev",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        },
+        {
+          "name": "V",
+          "type": "float",
+          "unit": "kts",
+          "description": "undefined"
+        },
+        {
+          "name": "dis",
+          "type": "float",
+          "unit": "ft",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Pressurization status",
+      "description": "Pressurization status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "alt",
+          "type": "float",
+          "unit": "set",
+          "description": "undefined"
+        },
+        {
+          "name": "vvi",
+          "type": "float",
+          "unit": "set",
+          "description": "undefined"
+        },
+        {
+          "name": "alt",
+          "type": "float",
+          "unit": "act",
+          "description": "undefined"
+        },
+        {
+          "name": "vvi",
+          "type": "float",
+          "unit": "act",
+          "description": "undefined"
+        },
+        {
+          "name": "test",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        },
+        {
+          "name": "diff",
+          "type": "float",
+          "unit": "psi",
+          "description": "undefined"
+        },
+        {
+          "name": "dump",
+          "type": "float",
+          "unit": "all",
+          "description": "undefined"
+        },
+        {
+          "name": "bleed",
+          "type": "float",
+          "unit": "src",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Auxiliary power unit and ground power unit status (APU/GPU status)",
+      "description": "Auxiliary power unit and ground power unit status (APU/GPU status)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "APU",
+          "type": "float",
+          "unit": "eqipd",
+          "description": "undefined"
+        },
+        {
+          "name": "APU",
+          "type": "float",
+          "unit": "swtch",
+          "description": "undefined"
+        },
+        {
+          "name": "APU",
+          "type": "float",
+          "unit": "runng",
+          "description": "undefined"
+        },
+        {
+          "name": "APU",
+          "type": "float",
+          "unit": "N1",
+          "description": "undefined"
+        },
+        {
+          "name": "APU",
+          "type": "float",
+          "unit": "genrt",
+          "description": "undefined"
+        },
+        {
+          "name": "GPU",
+          "type": "float",
+          "unit": "power",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Radar status",
+      "description": "Radar status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "targ",
+          "type": "float",
+          "unit": "selct",
+          "description": "The status of the target selection."
+        }
+      ]
+    },
+    {
+      "name": "Hydraulic status",
+      "description": "Hydraulic status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "hydr",
+          "type": "float",
+          "unit": "pumpn",
+          "description": "The status of hydraulic pump n."
+        },
+        {
+          "name": "hydr",
+          "type": "float",
+          "unit": "qtyn",
+          "description": "The hydraulic fluid in pump n."
+        },
+        {
+          "name": "hydr",
+          "type": "float",
+          "unit": "presn",
+          "description": "The pressure of hydraulic pump n."
+        }
+      ]
+    },
+    {
+      "name": "Electrical and solar power status (elec & solar status)",
+      "description": "Electrical and solar power status (elec & solar status)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "busn",
+          "type": "float",
+          "unit": "amp",
+          "description": "Bus n’s amperage."
+        },
+        {
+          "name": "busn",
+          "type": "float",
+          "unit": "volt",
+          "description": "Bus n’s voltage."
+        },
+        {
+          "name": "engin",
+          "type": "float",
+          "unit": "in W",
+          "description": "undefined"
+        },
+        {
+          "name": "solar",
+          "type": "float",
+          "unit": "out W",
+          "description": "undefined"
+        },
+        {
+          "name": "batt",
+          "type": "float",
+          "unit": "w-hr",
+          "description": "undefined"
+        },
+        {
+          "name": "Cross",
+          "type": "float",
+          "unit": "tie",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Icing status 1",
+      "description": "Icing status 1",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "inlet",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        },
+        {
+          "name": "prop",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        },
+        {
+          "name": "pitot",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        },
+        {
+          "name": "statc",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Icing status 2",
+      "description": "Icing status 2",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "aoa",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        },
+        {
+          "name": "lwing",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        },
+        {
+          "name": "rwing",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        },
+        {
+          "name": "windo",
+          "type": "float",
+          "unit": "ice",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Warning status",
+      "description": "Warning status",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "warn",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        },
+        {
+          "name": "caut",
+          "type": "float",
+          "unit": "time",
+          "description": "undefined"
+        },
+        {
+          "name": "warn",
+          "type": "float",
+          "unit": "work",
+          "description": "undefined"
+        },
+        {
+          "name": "caut",
+          "type": "float",
+          "unit": "work",
+          "description": "undefined"
+        },
+        {
+          "name": "gear",
+          "type": "float",
+          "unit": "work",
+          "description": "undefined"
+        },
+        {
+          "name": "gear",
+          "type": "float",
+          "unit": "warn",
+          "description": "undefined"
+        },
+        {
+          "name": "stall",
+          "type": "float",
+          "unit": "warn",
+          "description": "undefined"
+        },
+        {
+          "name": "VRS",
+          "type": "float",
+          "unit": "ratio",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Flight plan legs (flite-plan legs)",
+      "description": "Flight plan legs (flite-plan legs)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "leg",
+          "type": "float",
+          "unit": "#",
+          "description": "undefined"
+        },
+        {
+          "name": "leg",
+          "type": "float",
+          "unit": "type",
+          "description": "undefined"
+        },
+        {
+          "name": "leg",
+          "type": "float",
+          "unit": "lat",
+          "description": "undefined"
+        },
+        {
+          "name": "leg",
+          "type": "float",
+          "unit": "lon",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Hardware options",
+      "description": "Hardware options",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "pedal",
+          "type": "float",
+          "unit": "nobrk",
+          "description": "undefined"
+        },
+        {
+          "name": "pedal",
+          "type": "float",
+          "unit": "wibrk",
+          "description": "undefined"
+        },
+        {
+          "name": "yoke",
+          "type": "float",
+          "unit": "PFC",
+          "description": "undefined"
+        },
+        {
+          "name": "pedal",
+          "type": "float",
+          "unit": "PFC",
+          "description": "undefined"
+        },
+        {
+          "name": "throt",
+          "type": "float",
+          "unit": "PFC",
+          "description": "undefined"
+        },
+        {
+          "name": "cecon",
+          "type": "float",
+          "unit": "PFC",
+          "description": "undefined"
+        },
+        {
+          "name": "switc",
+          "type": "float",
+          "unit": "PFC",
+          "description": "undefined"
+        },
+        {
+          "name": "btogg",
+          "type": "float",
+          "unit": "PFC",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Camera location",
+      "description": "Camera location",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "camra",
+          "type": "float",
+          "unit": "lon",
+          "description": "The camera’s longitudinal location."
+        },
+        {
+          "name": "camra",
+          "type": "float",
+          "unit": "lat",
+          "description": "The camera’s latitudinal location."
+        },
+        {
+          "name": "camra",
+          "type": "float",
+          "unit": "ele",
+          "description": "The camera’s elevation."
+        },
+        {
+          "name": "camra",
+          "type": "float",
+          "unit": "hdg",
+          "description": "The camera’s heading."
+        },
+        {
+          "name": "camra",
+          "type": "float",
+          "unit": "pitch",
+          "description": "The camera’s pitch."
+        },
+        {
+          "name": "camra",
+          "type": "float",
+          "unit": "roll",
+          "description": "The camera’s roll."
+        },
+        {
+          "name": "camra",
+          "type": "float",
+          "unit": "clou",
+          "description": "The camera’s cloud cover."
+        }
+      ]
+    },
+    {
+      "name": "Ground location",
+      "description": "Ground location",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "cntr",
+          "type": "float",
+          "unit": "X",
+          "description": "undefined"
+        },
+        {
+          "name": "cntr",
+          "type": "float",
+          "unit": "Y",
+          "description": "undefined"
+        },
+        {
+          "name": "cntr",
+          "type": "float",
+          "unit": "Z",
+          "description": "undefined"
+        },
+        {
+          "name": "slope",
+          "type": "float",
+          "unit": "X",
+          "description": "undefined"
+        },
+        {
+          "name": "slope",
+          "type": "float",
+          "unit": "Z",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Climb statistics (climb stats)",
+      "description": "Climb statistics (climb stats)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "h-spd",
+          "type": "float",
+          "unit": "kt",
+          "description": "undefined"
+        },
+        {
+          "name": "v-spd",
+          "type": "float",
+          "unit": "fpm",
+          "description": "undefined"
+        },
+        {
+          "name": "mult",
+          "type": "float",
+          "unit": "VxVVI",
+          "description": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Cruise statistics (cruise stats)",
+      "description": "Cruise statistics (cruise stats)",
+      "idx": 0,
+      "fields": [
+        {
+          "name": "ff",
+          "type": "float",
+          "unit": "pph",
+          "description": "undefined"
+        },
+        {
+          "name": "ff",
+          "type": "float",
+          "unit": "gph",
+          "description": "undefined"
+        },
+        {
+          "name": "speed",
+          "type": "float",
+          "unit": "mph",
+          "description": "undefined"
+        },
+        {
+          "name": "eta",
+          "type": "float",
+          "unit": "smpg",
+          "description": "undefined"
+        },
+        {
+          "name": "eta",
+          "type": "float",
+          "unit": "nm/lb",
+          "description": "undefined"
+        },
+        {
+          "name": "range",
+          "type": "float",
+          "unit": "sm",
+          "description": "undefined"
+        },
+        {
+          "name": "endur",
+          "type": "float",
+          "unit": "hours",
+          "description": "undefined"
+        },
+        {
+          "name": "mult",
+          "type": "float",
+          "unit": "VxMPG",
+          "description": "undefined"
+        }
+      ]
+    }
+  ]
+}

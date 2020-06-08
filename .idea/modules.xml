@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/XPlaneUdpCodeGen/XPlaneUdpCodeGen.iml" filepath="$PROJECT_DIR$/XPlaneUdpCodeGen/XPlaneUdpCodeGen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XPlaneUdpCore/XPlaneUdpCore.iml" filepath="$PROJECT_DIR$/XPlaneUdpCore/XPlaneUdpCore.iml" />
+    </modules>
+  </component>
+</project>

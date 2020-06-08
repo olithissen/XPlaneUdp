@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_11">
+    <output url="file://$MODULE_DIR$/XPlaneUdpCodeGen/target/classes" />
+    <output-test url="file://$MODULE_DIR$/XPlaneUdpCodeGen/target/test-classes" />
+    <content url="file://$MODULE_DIR$/XPlaneUdpCodeGen">
+      <sourceFolder url="file://$MODULE_DIR$/XPlaneUdpCodeGen/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/XPlaneUdpCodeGen/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/XPlaneUdpCodeGen/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/XPlaneUdpCodeGen/target" />
+    </content>
+    <content url="file://$MODULE_DIR$/XPlaneUdpCore">
+      <sourceFolder url="file://$MODULE_DIR$/XPlaneUdpCore/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/XPlaneUdpCore/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/XPlaneUdpCore/src/test/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/XPlaneUdpCore/src/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.11.0" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.11.0" level="project" />
+  </component>
+</module>
